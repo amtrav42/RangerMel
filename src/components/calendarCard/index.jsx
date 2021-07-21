@@ -24,9 +24,12 @@ const CalendarCards = () => (
       return (
         <>
           {
-            calItemList.map((card) =>
-              <h2>{card.node.childMdx.frontmatter.fictionalYear} {card.node.childMdx.frontmatter.fictionalMonth}</h2>
-            )
+            calItemList.map((card) => {
+              const calItemMap = card.node.childMdx.frontmatter;
+              return (
+                <h2>{calItemMap.fictionalYear} {calItemMap.fictionalMonth}</h2>
+              )
+            })
           }
         </>  
       )
