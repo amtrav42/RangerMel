@@ -1,0 +1,10 @@
+{
+  "extends": "airbnb",
+   "rules": {
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "import/no-named-as-default": 0,
+    "no-undef": 0
+  },
+  "ignorePatterns": ["sync-requires.js", "**/_this_is_virtual_fs_path_/**/*.js"]
+}
