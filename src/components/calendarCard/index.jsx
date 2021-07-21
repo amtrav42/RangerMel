@@ -1,23 +1,39 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
-const ComponentName = ({ data }) => <pre>{JSON.stringify(data, null, 4)}</pre>
-
-export const query = graphql`
-  {
-    allFile {
-      edges {
-        node {
-          childMdx {
-            frontmatter {
-              fictionalMonth
-              fictionalYear
+const CalendarCards = () => (
+  <StaticQuery
+    query={graphql`
+      {
+        allFile {
+          edges {
+            node {
+              childMdx {
+                frontmatter {
+                  fictionalMonth
+                  fictionalYear
+                }
+              }
             }
           }
         }
       }
+    `}
+    render={data => {
+      const calItemList = data.allFile.edges;
+      return (
+        <>
+          {
+            calItemList.map((card) =>
+              <h2>{card.node.childMdx.frontmatter.fictionalYear} {card.node.childMdx.frontmatter.fictionalMonth}</h2>
+            )
+          }
+        </>  
+      )
     }
-  }
-`
 
-export default ComponentName
+    }
+  ></StaticQuery>
+)
+
+export default CalendarCards
