@@ -41,6 +41,18 @@ module.exports = {
         outputPath: `/podcast-rss-feed.xml`
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Ranger Mel and the Megafauna`,
+        short_name: `Ranger Mel`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: "src/images/favicon.png",
+      },
+    },
     `gatsby-plugin-mdx`,
   ],
 }

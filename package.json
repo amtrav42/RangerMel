@@ -19,6 +19,7 @@
     "@mdx-js/react": "^1.6.22",
     "eslint-config-react-app": "6.0.0",
     "gatsby": "3.9.1",
+    "gatsby-plugin-manifest": "^3.10.0",
     "gatsby-plugin-mdx": "^2.10.0",
     "gatsby-plugin-podcast-feed-mdx": "0.1.0-beta.0",
     "gatsby-plugin-react-helmet": "4.10.0",
