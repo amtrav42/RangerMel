@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Varta:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root{
+  --primary: #6CBFF5;
+  --secondary: #217EA6;
+  --tertiary: #004e6a;
+  --highlightsPrimary: #F98E4A;
+  --light: #fffefc;
+  --highlightsSecondary: #86EE57;
+  --font-highlights: 'Permanent Marker', cursive;
+  --font-heading: 'Amatic SC', cursive;
+  --font-body: 'Varta', sans-serif;
+  font-size: 14px;
+  --small-font: .9rem;
+  --small-medium-font: 1rem;
+  --medium-font: 1.3rem;
+  --medium-large-font: 1.8rem;
+  --large-font: 2rem;
+  --xlarge-font: 2.8rem;
+  --box-shadow: 4px 8px 10px rgba(0, 0, 0, .6);
+  --border-radius-sml: 4px;
+  box-sizing: border-box;
+}
+
+body{
+  background: var(--light);
+  font-family: var(--font-body);
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+}
