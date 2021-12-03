@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 
 :root{
-  --primary: #6CBFF5;
-  --secondary: #217EA6;
-  --tertiary: #004e6a;
+  --primary: #082445;
+  --secondary: #94dccd;
+  --tertiary: #a35432;
   --highlightsPrimary: #F98E4A;
-  --light: #fffefc;
-  --highlightsSecondary: #86EE57;
+  --light: #eedab7;
+  --highlightsSecondary: #4c5961;
   --font-highlights: 'Permanent Marker', cursive;
   --font-heading: 'Amatic SC', cursive;
   --font-body: 'Varta', sans-serif;
